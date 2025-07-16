@@ -4,8 +4,14 @@ import './App.css';
 function App() {
 
   let contacts = [
-    {id:1,type_marchandise: "Augustin",poids:"MC",destination:"MC",date_expedition:"MC",date_arrivee_prevue:"MC",statut:"MC",client:"MC",contact_client:"MC" },
-    {id:2,type_marchandise: "mc",poids:"MC",destination:"MC",date_expedition:"MC",date_arrivee_prevue:"MC",statut:"MC",client:"MC",contact_client:"MC" }
+    {id:1,type_marchandise: "Tongolo",poids:"75kg",destination:"Maurice",date_expedition:"15/07/25",
+      date_arrivee_prevue:"10/10/25",statut:"En transit",client:"MC Augustin",contact_client:"0326156099" },
+    {id:2,type_marchandise: "Riz",poids:"1 Tonne",destination:"Mayotte",date_expedition:"12/07/25",
+      date_arrivee_prevue:"25/09/25",statut:"En attente ",client:"Bien-Venu",contact_client:"0381877640" },
+    {id:3,type_marchandise: "Tomate",poids:"40kg",destination:"Seychelles",date_expedition:"21/07/25",
+        date_arrivee_prevue:"16/10/25",statut:"Livrée",client:"Maman'i Luna ",contact_client:"0327878724" },
+    {id:4,type_marchandise: "Kida vert ",poids:"5 Tonne",destination:"Comore",date_expedition:"28/06/25",
+          date_arrivee_prevue:"02/09/25",statut:"Retardéer",client:"Beloa",contact_client:"0335954801" }
   ]
 
   return (
@@ -37,7 +43,8 @@ function App() {
                         <td>{contact.statut}</td>
                         <td>{contact.client}</td>
                         <td>{contact.contact_client}</td>
-
+                      <button className="modifier">Modifier</button>
+                      <button className="supprimer">Supprimer</button>
                     </tr>
                 ))}
             </tbody>

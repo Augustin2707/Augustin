@@ -1,3 +1,34 @@
+:root {
+    /* Couleurs révisées avec meilleur contraste */
+    --primary: #4361ee;
+    --primary-light: #4895ef;
+    --primary-lighter: #e0e8ff;
+    --secondary: #3a0ca3;
+    --secondary-light: #480ca8;
+    --success: #4bb543;
+    --success-light: #e6f7e5;
+    --danger: #f72585;
+    --danger-light: #ffebf1;
+    --warning: #ffbe0b;
+    --info: #4cc9f0;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --dark-light: #495057;
+    --gray: #6c757d;
+    --gray-light: #e9ecef;
+    
+    /* Effets visuels améliorés */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 16px;
+}
+
 .App {
   text-align: center;
 }
@@ -19,9 +50,21 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+
+.modifier {
+  background-color: white;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.supprimer {
+  background-color: white;
+  color: var(--danger);
+  border: 1px solid var(--danger);
 }
 
 .App-link {
